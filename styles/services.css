@@ -1,0 +1,80 @@
+/* =========================================================
+   SERVIÇOS — 1366 x 480
+   ========================================================= */
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;                    /* 56px */
+  padding: 5.5rem 7.5rem 7.5rem;  /* 88px 120px 120px */
+
+  background-color: var(--gray-600);
+}
+
+.services .subtitle {
+  color: var(--red);
+}
+
+.services .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1.5rem;                    /* 24px */
+
+  width: 888px;
+  max-width: 100%;
+}
+
+/* --------------------------- Service Card --------------------------- */
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;                   /* 20px */
+  padding: 1.25rem;               /* 20px */
+
+  width: 280px;
+  height: 155px;
+
+  border: 2px solid var(--gray-500);
+  border-radius: 12px;
+
+  transition: border-color 0.2s;
+}
+
+.service-card:hover {
+  border-color: var(--gray-400);
+}
+
+.service-card > img {
+  width: 48px;
+  height: 48px;
+}
+
+.service-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;                    /* 8px */
+  width: 100%;
+}
+
+/* ----------------------------- Responsivo ----------------------------- */
+
+@media (max-width: 1100px) {
+  .services {
+    padding: 5.5rem 1.5rem 6rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .service-card {
+    width: 100%;
+    max-width: 280px;
+  }
+}
